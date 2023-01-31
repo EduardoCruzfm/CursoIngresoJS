@@ -1,4 +1,4 @@
-/*
+/* Eduardo Cruz
 Debemos lograr tomar un dato por 'ID'
 y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 
@@ -8,8 +8,11 @@ y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 // 	alert(nombreIngresado);
 // }
 
- function mostrar(){
-	let nombreIngresado = document.getElementById("txtIdNombre").value;
+ function mostrar() {
+
+	let nombreIngresado; 
+	nombreIngresado = document.getElementById("txtIdNombre").value;
+	
 	alert(nombreIngresado);
 	document.getElementById("txtIdNombre").value = "";
  }

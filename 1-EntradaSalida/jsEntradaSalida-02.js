@@ -1,11 +1,13 @@
-/*
+/* Eduardo Cruz
 Debemos lograr tomar un nombre con 'prompt' 
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 
-let nombre = prompt("¿Cual es tu nombre?")
 
-function mostrar(){
-	alert(nombre)
+
+function mostrar() {
+	let nombrePersona;
+	nombrePersona = prompt("¿Cual es tu nombre?");
+	alert(nombrePersona);
 }
 
 
