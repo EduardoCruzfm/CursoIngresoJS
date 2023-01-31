@@ -1,14 +1,19 @@
 function mostrar(){
 	//Genero el número RANDOM entre 1 y 10 
 	let aleatorio;
-	let max;
-	let mim;
+	let max = 10;
+	let min = 1;
 
-	max = 10;
-	min = 1;
+	aleatorio = Math.floor((Math.random() * (max - min + 1)) + min);
 
-	aleatorio =parseInt(Math.random() * max ); 
-	 alert(aleatorio)
+	alert(aleatorio)
 
 
 }//FIN DE LA FUNCIÓN
+
+
+/* Math.floor(Math.random() * (max - min + 1) + min)
+Math.floor redondea hacia abajo los numeros con decimales */
+
+/* Math.round(Math.random() * (max - min) + min)
+Math.round redondea hacia el entero mas cercano */let 
