@@ -1,8 +1,61 @@
-/*
+/* Eduardo Cruz
+Ejercicio 8.bis: Ingresar dos numeros por id
+Se pide:
+mostrar por alert:
+a) La suma de los dos numeros
+b) El promedio de los numeros
+c) El modulo de los numeros (el primero en modulo del segundo)
+*/
+
+
+function SacarResto(){
+	let numUno;
+	let numDos;
+	let suma;
+	let promedio;
+	let mensajeUno;
+	let mensajeDos;
+	let mensajeTres;
+	
+	numUno = parseInt(document.getElementById("txtIdNumeroDividendo").value);
+	numDos = parseInt(document.getElementById("txtIdNumeroDivisor").value);	
+
+	suma = numUno + numDos;
+	mensajeUno = `La suma es ${suma}`;
+	alert(mensajeUno);
+
+	promedio = (numUno + numDos) / 2;
+	mensajeDos =`El promedio es ${promedio}`;
+	alert(mensajeDos);
+
+	modulo = numUno % numDos;
+	mensajeTres =`El modulo es ${modulo}`;
+	alert(mensajeTres);
+	
+} 
+// https://onlinegdb.com/P8gDhc1rw
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Eduardo Cruz
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
+
+/*
 function SacarResto(){
 	let dividendo;
 	let divisor;
@@ -14,11 +67,11 @@ function SacarResto(){
 
 	dividendo = parseInt(dividendo)
 	divisor = parseInt(divisor)
-	resultado = dividendo % divisor;
+	resultado = `El Resto es ${dividendo % divisor}`;
 
-	alert(`El Resto es ${resultado}`);
+	alert(resultado);
 	
-}
+}*/
 /* Operador aritmeticos ( +, - , * , / , % (operador modulo / resto))
 
 									|

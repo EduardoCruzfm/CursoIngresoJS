@@ -1,3 +1,4 @@
+//Eduardo Cruz
 function mostrar(){
 	//tomo la edad  
 	let edad;

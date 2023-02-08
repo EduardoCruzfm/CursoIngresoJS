@@ -3,19 +3,21 @@ Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
+
 function sumar(){
 	let nuemroUno;
 	let numeroDos;
 	let resultado;
 
-	nuemroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;	
+	// nuemroUno = document.getElementById("txtIdNumeroUno").value;
+	// numeroDos = document.getElementById("txtIdNumeroDos").value;	
 
-	nuemroUno = parseInt(nuemroUno)
-	numeroDos = parseInt(numeroDos)
-	resultado = nuemroUno + numeroDos;
+	nuemroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
+	// resultado = nuemroUno + numeroDos;
 
-	alert(`La Suma es ${resultado}`);	
+	resultado = `La Suma es ${nuemroUno + numeroDos}`;
+	alert(resultado);	
 }
 
 function restar(){
@@ -23,18 +25,20 @@ function restar(){
 	let numeroDos;
 	let resultado;
 
-	nuemroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;	
+	// nuemroUno = ;
+	// numeroDos = ;	
 
-	nuemroUno = parseInt(nuemroUno)
-	numeroDos = parseInt(numeroDos)
-	resultado = nuemroUno - numeroDos;
+	nuemroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
+	// resultado = nuemroUno - numeroDos;
+
+	resultado = `La Resta es ${nuemroUno - numeroDos}`;
 	// vemos si es de tipo string o number
 	// alert("resultado es de tipo: " + typeof resultado);
 	// alert("numero uno es de tipo: " + typeof nuemroUno);
 	// alert("numero dos es de tipo: " + typeof numeroDos);
 
-	alert(`La Resta es ${resultado}`);
+	alert(resultado);
 }
 
 function multiplicar(){ 
@@ -42,14 +46,15 @@ function multiplicar(){
 	let numeroDos;
 	let resultado;
 
-	nuemroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;	
+	// nuemroUno = ;
+	// numeroDos = ;	
 
-	nuemroUno = parseInt(nuemroUno)
-	numeroDos = parseInt(numeroDos)
-	resultado = nuemroUno * numeroDos;
+	nuemroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
+	// resultado = nuemroUno * numeroDos;
+	resultado = `El Producto es ${nuemroUno * numeroDos}`;
 
-	alert(`El Producto es ${resultado}`);
+	alert(resultado);
 }
 
 function dividir(){
@@ -57,13 +62,14 @@ function dividir(){
 	let numeroDos;
 	let resultado;
 
-	nuemroUno = document.getElementById("txtIdNumeroUno").value;
-	numeroDos = document.getElementById("txtIdNumeroDos").value;	
+	// nuemroUno = ;
+	// numeroDos = ;	
 
-	nuemroUno = parseInt(nuemroUno)
-	numeroDos = parseInt(numeroDos)
-	resultado = nuemroUno / numeroDos;
+	nuemroUno = parseInt(document.getElementById("txtIdNumeroUno").value);
+	numeroDos = parseInt(document.getElementById("txtIdNumeroDos").value);
+	// resultado = nuemroUno / numeroDos;
+	resultado = `El cociente es ${nuemroUno / numeroDos}`;
 
-	alert(`El cociente es ${resultado}`);
+	alert(resultado);
 }
 

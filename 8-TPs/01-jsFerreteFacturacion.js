@@ -1,56 +1,67 @@
-/*1.	Para el departamento de facturación:
+/* Eduardo Cruz
+1.	Para el departamento de facturación:
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () {
-let precio1;
-let precio2;
-let precio3;
-let suma;
+    let precioUno;
+    let precioDos;
+    let precioTres;
+    let suma;
+    let mensaje;
 
-precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-suma = precio1 + precio2 + precio3;
-alert(`La suma es $ ${suma}`);
+    suma = precioUno + precioDos + precioTres;
+    mensaje = `La suma es $ ${suma}`;
+    alert(mensaje);
 
 }
-
 function Promedio () {
-let precio1;
-let precio2;
-let precio3;
-let promedio;
+    let precioUno;
+    let precioDos;
+    let precioTres;
+    let promedio;
+    let mensaje;
 
-precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-promedio = (precio1 + precio2 + precio3) / 3;
-promedio = promedio.toFixed(2);
-alert(`El promedio es $ ${promedio}`);
+    promedio = (precioUno + precioDos + precioTres) / 3;
+    promedio = promedio.toFixed(2);
+
+    mensaje = `El promedio es $ ${promedio}`;
+    alert(mensaje);
 	
 }
 
 function PrecioFinal () {
-let precio1;
-let precio2;
-let precio3;
-let suma;
-let iva;
-let preciofinal;
-    
-precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);  
-	
-suma = precio1 + precio2 + precio3;
-iva = suma * 21 / 100;
+    let precioUno;
+    let precioDos;
+    let precioTres;
+    let suma;
+    let IVA;   
+    let promedio;       
+    let preciofinal;  
+    let mensaje;
 
-preciofinal = suma + iva;
-preciofinal = preciofinal.toFixed(2)
-alert(`El precio final es $ ${preciofinal}`);
+    IVA = 21 / 100; 
+        
+    precioUno = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precioDos = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precioTres = parseFloat(document.getElementById("txtIdPrecioTres").value);  
+        
+    suma = precioUno + precioDos + precioTres;
+    promedio = suma * IVA;
+
+    preciofinal = suma + promedio;
+    preciofinal = preciofinal.toFixed(2)
+
+    mensaje = `El precio final es $ ${preciofinal}`;
+    alert(mensaje);
 
 }
